@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.azevedoedison</groupId>
 	<artifactId>userapi</artifactId>
-	<version>0.0.1-SNAPSHOT</version> 
+	<version>0.0.1-SNAPSHOT</version>  
 	<name>userapi</name>
 	<description>API de cadastro de Usuario</description>
 	<properties>
