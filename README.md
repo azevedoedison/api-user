@@ -23,24 +23,24 @@ Nenhum, utilizado banco H2 em memória.
 https://app-user-spring.herokuapp.com/swagger-ui/index.html#/
 
 ## Teste via Swagger (Localhost):
-![](https://user-images.githubusercontent.com/414878/157461855-e9ae9c1a-f3d1-47bf-9eb0-1b44b22f7ee4.png)
+![](https://user-images.githubusercontent.com/414878/160253391-992078b2-bf6a-4724-b975-936366f033c0.png)
 
-## Teste via Postman:
+## Teste via Swagger:
 
 * POST (Salvando)
-![](https://user-images.githubusercontent.com/414878/157462025-a46151d8-9b01-405e-b1f5-24a6fbd4242a.png)
+![](https://user-images.githubusercontent.com/414878/160253441-acf0450b-51a6-494a-afc9-eb0f33ba3565.png)
 
 * GETALL (Buscando todos)
-![](https://user-images.githubusercontent.com/414878/157461921-49dce45c-d3c5-4d83-abfc-8eb059dbaefd.png)
+![](https://user-images.githubusercontent.com/414878/160253404-770e7fa2-d9f0-4d13-afc6-be5c280fed5b.png)
 
 * GETBYID (Buscando por ID)
-![](https://user-images.githubusercontent.com/414878/157461977-2f6a2ead-08c8-4c34-be29-707257dd5e54.png)
+![](https://user-images.githubusercontent.com/414878/160253738-10e25acc-a7f3-45c7-a0a2-b3dfe7315615.png)
 
 * PUT (Atualizando por ID)
-![](https://user-images.githubusercontent.com/414878/157462103-b4ec815e-3fd9-4c30-b94e-9d50a609872c.png)
+![](https://user-images.githubusercontent.com/414878/160253453-45ef8bf9-c24b-4f1b-a1db-7b61301eb467.png)
 
 * DELETE (Deletando por ID
-![](https://user-images.githubusercontent.com/414878/157462046-c49de6d7-6928-49e4-a007-ee03990a4494.png)
+![](https://user-images.githubusercontent.com/414878/160253396-886be8c6-2dfc-4893-a0fb-3042facfb1e3.png)
 
 ## Meta
 
