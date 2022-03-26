@@ -19,6 +19,10 @@
 ## Requisitos de Banco de Dados
 Nenhum, utilizado banco H2 em memória.
 
+
+## Cobertura dos Testes:
+![](https://user-images.githubusercontent.com/414878/160253821-30588414-96f7-4e35-ab54-aaa14afda4b2.png)
+
 ## Acesso para testes no Heroku
 https://app-user-spring.herokuapp.com/swagger-ui/index.html#/
 
