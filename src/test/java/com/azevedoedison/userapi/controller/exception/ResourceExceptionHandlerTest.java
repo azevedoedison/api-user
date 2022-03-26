@@ -1,12 +1,12 @@
 package com.azevedoedison.userapi.controller.exception;
 
+import com.azevedoedison.userapi.service.exception.DataIntegrityViolationException;
 import com.azevedoedison.userapi.service.exception.ObjectNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mock.web.MockHttpServletRequest;

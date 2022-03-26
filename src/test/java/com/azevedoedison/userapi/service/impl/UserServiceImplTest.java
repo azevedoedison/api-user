@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.azevedoedison.userapi.model.User;
 import com.azevedoedison.userapi.repository.UserRepository;
-import com.azevedoedison.userapi.service.exception.DataIntegratyViolationException;
+import com.azevedoedison.userapi.service.exception.DataIntegrityViolationException;
 import com.azevedoedison.userapi.service.exception.ObjectNotFoundException;
 
 @SpringBootTest
@@ -150,7 +150,7 @@ public class UserServiceImplTest {
 			service.create(user);
 		}catch (Exception e) {
 			/*Assegure pra mim que a Classe de Excessão é a classe correta*/
-			assertEquals(DataIntegratyViolationException.class, e.getClass());
+			assertEquals(DataIntegrityViolationException.class, e.getClass());
 		}
 	}
 	
@@ -187,22 +187,22 @@ public class UserServiceImplTest {
 			service.update(user);
 		}catch (Exception e) {
 			/*Assegure pra mim que a Classe de Excessão é a classe correta*/
-			assertEquals(DataIntegratyViolationException.class, e.getClass());
+			assertEquals(DataIntegrityViolationException.class, e.getClass());
 		}
 	}
 		
 	@Test //Quando pesquisar por e-mail já existente retorne erro de integridade (ex: cadastro com dois emails iguais).
-	void whenFindByEmailThenReturnDataIntegratyViolationException() {
+	void whenFindByEmailThenReturnDataIntegrityViolationException() {
 		
 		/*Moquei o método Pesquisar por email retornando uma exceção de integridade de dados.*/	
 		Mockito.when(repository.findByEmail(Mockito.any()))
-		.thenThrow(new DataIntegratyViolationException("E-mail já cadastrado no sistema"));
+		.thenThrow(new DataIntegrityViolationException("E-mail já cadastrado no sistema"));
 							
 		try {
 			service.findByEmail(user);
 		}catch (Exception e) {
 			/*Assegure pra mim que a Classe de Excessão é a classe correta*/
-			assertEquals(DataIntegratyViolationException.class, e.getClass());
+			assertEquals(DataIntegrityViolationException.class, e.getClass());
 			
 			/*Assegure pra mim que a mensagem de excessão é a mensagem correta*/
 			assertEquals("E-mail já cadastrado no sistema",e.getMessage());

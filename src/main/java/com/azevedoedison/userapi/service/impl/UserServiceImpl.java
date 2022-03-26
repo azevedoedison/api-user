@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.azevedoedison.userapi.model.User;
 import com.azevedoedison.userapi.repository.UserRepository;
 import com.azevedoedison.userapi.service.UserService;
-import com.azevedoedison.userapi.service.exception.DataIntegratyViolationException;
+import com.azevedoedison.userapi.service.exception.DataIntegrityViolationException;
 import com.azevedoedison.userapi.service.exception.ObjectNotFoundException;
 
 @Service
@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
 	public void findByEmail(User user) {
 		Optional<User> resposta = userRepository.findByEmail(user.getEmail());
 		if(resposta.isPresent() && !resposta.get().getId().equals(user.getId())) {
-			throw new DataIntegratyViolationException("E-mail já cadastrado no sistema");
+			throw new DataIntegrityViolationException("E-mail já cadastrado no sistema");
 		}
 	}
 

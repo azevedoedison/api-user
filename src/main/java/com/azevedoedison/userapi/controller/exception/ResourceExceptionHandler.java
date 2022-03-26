@@ -4,12 +4,12 @@ import java.time.LocalDateTime;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import com.azevedoedison.userapi.service.exception.DataIntegrityViolationException;
 import com.azevedoedison.userapi.service.exception.ObjectNotFoundException;
 
 @ControllerAdvice
